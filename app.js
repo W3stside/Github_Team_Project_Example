@@ -14,3 +14,17 @@ function arrLooper (arr) {
 		console.log( arr[i] )
 	}
 }
+
+//Adding another thing
+var p = Promise.resolve('hello');
+
+p
+.then( () => {
+	console.log('This was set off');
+})
+.then( () => {
+	console.log('Now this');
+})
+.catch( err => {
+	throw err;
+});
