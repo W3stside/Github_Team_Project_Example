@@ -7,3 +7,6 @@ console.log('changed this');
 function doSomeShit (a) {
 	console.log(a);
 }
+
+//adding this in HOTFIX
+console.log('HOTFIXED');
