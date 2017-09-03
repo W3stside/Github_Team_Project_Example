@@ -8,5 +8,23 @@ function doSomeShit (a) {
 	console.log(a);
 }
 
-//adding this in HOTFIX
-console.log('HOTFIXED');
+//adding a looper
+function arrLooper (arr) {
+	for (let i = 0;; i < arr.length; i++) {
+		console.log( arr[i] )
+	}
+}
+
+//Adding another thing
+var p = Promise.resolve('hello');
+
+p
+.then( () => {
+	console.log('This was set off');
+})
+.then( () => {
+	console.log('Now this');
+})
+.catch( err => {
+	throw err;
+});
